@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<properties>
+   <entry key="AG}-2edba2ef:14bc6c7d9db:-7c20">CheckIfNameIsAtLeast3CharsLong</entry>
+   <entry key="AG}-2edba2ef:14bc6c7d9db:-7c1a">CheckIfNamesNoMoreThan3CharsLong</entry>
+   <entry key="AG}-2edba2ef:14bc6c7d9db:-7c1e">requestDataEmpty</entry>
+   <entry key="AG}-2edba2ef:14bc6c7d9db:-7c26">CheckIfReviewFieldsAreNotEmptyRule</entry>
+</properties>

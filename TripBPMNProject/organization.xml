@@ -8,10 +8,6 @@
             <ns5:name>TripBPMNProject.Process Owner</ns5:name>
             <ns1:processRole id="ProcessOwner" name="Process Owner"/>
         </ns1:applicationRole>
-        <ns1:applicationRole id="TripBPMNProject.Role" isProcessRole="false">
-            <ns5:name>TripBPMNProject.Role</ns5:name>
-            <ns1:processRole id="Role" name="Role"/>
-        </ns1:applicationRole>
         <ns1:applicationRole id="TripBPMNProject.Klient" isProcessRole="true">
             <ns5:name>TripBPMNProject.Klient</ns5:name>
             <ns1:processRole id="Klient" name="Klient"/>
@@ -27,6 +23,10 @@
         <ns1:applicationRole id="TripBPMNProject.LinieLotnicze" isProcessRole="true">
             <ns5:name>TripBPMNProject.LinieLotnicze</ns5:name>
             <ns1:processRole id="LinieLotnicze" name="LinieLotnicze"/>
+        </ns1:applicationRole>
+        <ns1:applicationRole id="TripBPMNProject.Firma" isProcessRole="true">
+            <ns5:name>TripBPMNProject.Firma</ns5:name>
+            <ns1:processRole id="Firma" name="Firma"/>
         </ns1:applicationRole>
     </ns1:applicationRoles>
     <ns1:applicationRoleOrgUnitCalendarAssociations/>

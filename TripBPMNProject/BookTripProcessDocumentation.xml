@@ -81,6 +81,9 @@
                 <labels>
                     <label locale="en">End1</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="sf66"/>
             <topicDocumentation name="sf67"/>
@@ -109,6 +112,9 @@
                 <labels>
                     <label locale="en">End2</label>
                 </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="sf68"/>
             <topicDocumentation name="sf69"/>
@@ -143,6 +149,14 @@
                     <label locale="en">ParallelGateway</label>
                 </labels>
             </topicDocumentation>
+            <topicDocumentation name="GTW12337286550143">
+                <labels>
+                    <label locale="en">czyWniosekPoprawny</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="sf43"/>
             <topicDocumentation name="sf44"/>
             <topicDocumentation name="sf48"/>
@@ -163,6 +177,12 @@
             <topicDocumentation name="sf61"/>
             <topicDocumentation name="sf62"/>
             <topicDocumentation name="sf63"/>
+            <topicDocumentation name="sf121"/>
+            <topicDocumentation name="sf123">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
         </topicDocumentations>
     </component>
 </processDocumentation>

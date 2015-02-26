@@ -13,6 +13,9 @@
   <import namespace="http://xmlns.oracle.com/bpel/workflow/taskService"
           location="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl"
           importType="wsdl"/>
+  <import namespace="http://xmlns.oracle.com/RequestReviewRules/RequestReviewRules_DecisionService_1"
+          location="RequestReviewRules_DecisionService_1.wsdl"
+          importType="wsdl"/>
   <property name="productVersion" type="xs:string" many="false">11.1.1.7.0</property>
   <component name="BookTripProcess">
     <implementation.bpmn src="processes/BookTripProcess.bpmn"/>
@@ -23,8 +26,15 @@
   <component name="WypelnijWniosek">
     <implementation.workflow src="WypelnijWniosek.task"/>
   </component>
+  <component name="RequestReviewRules">
+    <implementation.decision src="RequestReviewRules.decs"/>
+  </component>
   <wire>
     <source.uri>BookTripProcess/HumanTasks.WypelnijWniosek.reference</source.uri>
     <target.uri>WypelnijWniosek/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>BookTripProcess/Rules.Tripbpmn.RequestReviewRules.RequestReviewRules_DecisionService_1.reference</source.uri>
+    <target.uri>RequestReviewRules/RequestReviewRules_DecisionService_1</target.uri>
   </wire>
 </composite>
