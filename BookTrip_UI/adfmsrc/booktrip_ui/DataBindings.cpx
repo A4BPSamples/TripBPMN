@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="booktrip_ui" ClientType="Generic">
+  <pageMap>
+    <page path="/taskDetails1.jspx" usageId="booktrip_ui_taskDetails1PageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="booktrip_ui_taskDetails1PageDef"
+          path="booktrip_ui.pageDefs.taskDetails1PageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="BookTrip_UI_WypelnijWniosek"
+        path="booktrip_ui.BookTrip_UI_WypelnijWniosek"/>
+  </dataControlUsages>
+</Application>

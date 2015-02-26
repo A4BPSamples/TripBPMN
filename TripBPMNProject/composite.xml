@@ -20,12 +20,6 @@
               many="false">sync</property>
     <property name="bpel.config.transaction" type="xs:string" many="false">required</property>
   </component>
-  <component name="WypelnijWniosekOWyjazd">
-    <implementation.workflow src="WypelnijWniosekOWyjazd.task"/>
-  </component>
-  <component name="Humantask1">
-    <implementation.workflow src="Humantask1.task"/>
-  </component>
   <component name="WypelnijWniosek">
     <implementation.workflow src="WypelnijWniosek.task"/>
   </component>

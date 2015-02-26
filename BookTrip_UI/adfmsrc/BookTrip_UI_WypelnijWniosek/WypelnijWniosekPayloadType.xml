@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93"
+          id="WypelnijWniosekPayloadType" Package="BookTrip_UI_WypelnijWniosek"
+          BeanClass="BookTrip_UI_WypelnijWniosek.WypelnijWniosekPayloadType"
+          isJavaBased="false">
+  <AccessorAttribute id="BookTripRequestObject" IsCollection="true"
+                     BeanClass="BookTrip_UI_WypelnijWniosek.BookTripRequestObjectType"
+                     CollectionBeanClass="BookTrip_UI_WypelnijWniosek.BookTripRequestObjectType_BookTripRequestObject_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Book Trip Request Object"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="BookTripRequestObject"/>
+      <Property Name="targetNamespace"
+                Value="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>
