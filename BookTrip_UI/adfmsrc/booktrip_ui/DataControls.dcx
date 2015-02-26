@@ -20,4 +20,23 @@
                       InitiationTask="true" DocumentStoreConfiguration="false"/>
     </Source>
   </AdapterDataControl>
+  <AdapterDataControl id="BookTrip_UI_AcceptRequest"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition"
+                      SupportsTransactions="true" SupportsSortCollection="false"
+                      SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="BookTrip_UI_AcceptRequest"
+                      BeanClass="BookTrip_UI_AcceptRequest"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/oracle/jdev_user_home/mywork/TripBPMN_OBE/TripBPMNProject/xsd/AcceptRequestWorkflowTask.xsd"
+                      RootElement="task"
+                      rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../TripBPMNProject/AcceptRequest.task"
+                      InitiationTask="false"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
 </DataControlConfigs>

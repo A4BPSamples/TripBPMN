@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject" xmlns:ns0="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject">
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" schemaLocation="../businessCatalog/TripBookerTypes/BookTripRequestObject.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject" schemaLocation="../businessCatalog/TripBookerTypes/RequestReviewObject.xsd"/>
+   <complexType name="AcceptRequestPayloadType">
+      <sequence>
+         <element ref="ns0:BookTripRequestObject"/>
+         <element ref="ns1:RequestReviewObject"/>
+      </sequence>
+   </complexType>
+</schema>

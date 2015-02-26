@@ -1,5 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
+   <hash n="adrs-workspace-properties">
+      <value n="adrs-instance-binding" v="DefaultServer"/>
+   </hash>
    <value n="application-package-prefix" v="tripbpmn"/>
    <value n="appTemplateId" v="BPMApplicationTemplate"/>
    <hash n="component-versions">
@@ -14,7 +17,9 @@
       <value n="oracle.mds.internal.dt.ide.migrator.MDSConfigMigratorHelper" v="11.1.1.0.5313"/>
    </hash>
    <list n="listOfChildren">
+      <hash><url n="URL" path="../TripBooker/BookHotel/BookHotel.jpr"/></hash>
       <hash><url n="URL" path="BookTrip_UI/BookTrip_UI.jpr"/></hash>
+      <hash><url n="URL" path="TripBPMNHelpers/TripBPMNHelpers.jpr"/></hash>
       <hash><url n="URL" path="TripBPMNProject/TripBPMNProject.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">

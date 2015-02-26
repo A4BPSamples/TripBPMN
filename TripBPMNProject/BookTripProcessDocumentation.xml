@@ -118,6 +118,14 @@
             </topicDocumentation>
             <topicDocumentation name="sf68"/>
             <topicDocumentation name="sf69"/>
+            <topicDocumentation name="ACT12338444706526">
+                <labels>
+                    <label locale="en">Zaakceptuj wniosek</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
             <topicDocumentation name="EVT12241105805682">
                 <labels>
                     <label locale="en">Start</label>
@@ -127,6 +135,14 @@
                 <labels>
                     <label locale="en">End</label>
                 </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12338435407981">
+                <labels>
+                    <label locale="en">PrzekroczenieCzasuOczekiwania</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
             </topicDocumentation>
             <topicDocumentation name="GTW12335656509088">
                 <labels>
@@ -183,6 +199,8 @@
                     <description locale="en"></description>
                 </descriptions>
             </topicDocumentation>
+            <topicDocumentation name="sf68"/>
+            <topicDocumentation name="sf70"/>
         </topicDocumentations>
     </component>
 </processDocumentation>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <definitions fileRevision="20120217" version="11.1.1.7.0.0.8" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.omg.org/spec/DD/20100524/DI" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns4="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns5="http://xmlns.oracle.com/bpm/OracleExtensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <process processType="Public" isExecutable="true" name="BookTripProcess" id="BookTripProcess">
+    <process isExecutable="true" processType="Public" name="BookTripProcess" id="BookTripProcess">
         <extensionElements>
             <ns5:OracleExtensions>
                 <ns5:FeatureSet>
@@ -32,8 +32,8 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
-                            <ns5:Position x="0" y="0"/>
-                            <ns5:Size width="200" height="0"/>
+                            <ns5:Position y="0" x="0"/>
+                            <ns5:Size height="0" width="200"/>
                         </ns5:GraphicsAttributes>
                         <ns5:LaneAttributes roleId="Klient"/>
                         <ns5:FeatureSet/>
@@ -44,8 +44,8 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
-                            <ns5:Position x="200" y="0"/>
-                            <ns5:Size width="200" height="0"/>
+                            <ns5:Position y="0" x="200"/>
+                            <ns5:Size height="0" width="200"/>
                         </ns5:GraphicsAttributes>
                         <ns5:LaneAttributes roleId="Firma"/>
                         <ns5:FeatureSet/>
@@ -56,8 +56,8 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
-                            <ns5:Position x="400" y="0"/>
-                            <ns5:Size width="200" height="0"/>
+                            <ns5:Position y="0" x="400"/>
+                            <ns5:Size height="0" width="200"/>
                         </ns5:GraphicsAttributes>
                         <ns5:LaneAttributes roleId="LinieLotnicze"/>
                         <ns5:FeatureSet/>
@@ -68,8 +68,8 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
-                            <ns5:Position x="600" y="0"/>
-                            <ns5:Size width="200" height="0"/>
+                            <ns5:Position y="0" x="600"/>
+                            <ns5:Size height="0" width="200"/>
                         </ns5:GraphicsAttributes>
                         <ns5:LaneAttributes roleId="Hotel"/>
                         <ns5:FeatureSet/>
@@ -81,7 +81,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="234" y="107"/>
+                        <ns5:Position y="107" x="234"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -104,35 +104,35 @@
                 <dataInput name="bookTripRequestObject" id="bookTripRequestObject">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" element="BookTripRequestObject" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataInput>
                 <dataInput name="execData" id="execData">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpel/workflow/task" element="task" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="task" namespace="http://xmlns.oracle.com/bpel/workflow/task"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataInput>
                 <dataOutput name="outcome" id="outcome">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="bookTripRequestObject" id="bookTripRequestObject">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" element="BookTripRequestObject" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="execData" id="execData">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpel/workflow/task" element="task" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="task" namespace="http://xmlns.oracle.com/bpel/workflow/task"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
@@ -180,7 +180,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="312" y="309"/>
+                        <ns5:Position y="309" x="312"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -188,7 +188,7 @@
                         <ns5:StringFeature value="Begin Level" name="level"/>
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                     </ns5:FeatureSet>
-                    <ns5:BusinessRuleTaskData businessRuleName="Rules.Tripbpmn.RequestReviewRules" functionName="RequestReviewRules_DecisionService_1"/>
+                    <ns5:BusinessRuleTaskData functionName="RequestReviewRules_DecisionService_1" businessRuleName="Rules.Tripbpmn.RequestReviewRules"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
@@ -196,14 +196,14 @@
                 <dataInput name="bookTripRequestObject" id="bookTripRequestObject">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" element="BookTripRequestObject" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataInput>
                 <dataOutput name="requestReviewObject" id="requestReviewObject">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject" element="RequestReviewObject" isArray="false"/>
+                            <ns5:TypeRef isArray="false" element="RequestReviewObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
@@ -275,7 +275,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="522" y="310"/>
+                        <ns5:Position y="310" x="522"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -290,18 +290,183 @@
                         <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
                         <ns5:StringFeature value="" name="reinitiateSource"/>
                     </ns5:FeatureSet>
-                    <ns5:HumanTask/>
+                    <ns5:HumanTask humanTaskReference="HumanTasks.AcceptRequest"/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <ioSpecification/>
+            <ioSpecification>
+                <dataInput name="requestReviewObject" id="requestReviewObject">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" element="RequestReviewObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataInput>
+                <dataInput name="bookTripRequestObject" id="bookTripRequestObject">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataInput>
+                <dataInput name="execData" id="execData">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" element="task" namespace="http://xmlns.oracle.com/bpel/workflow/task"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataInput>
+                <dataOutput name="outcome" id="outcome">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataOutput>
+                <dataOutput name="bookTripRequestObject" id="bookTripRequestObject">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataOutput>
+                <dataOutput name="execData" id="execData">
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:TypeRef isArray="false" element="task" namespace="http://xmlns.oracle.com/bpel/workflow/task"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </dataOutput>
+                <inputSet id="ACT12335643291574_uniqueInputSet">
+                    <dataInputRefs>requestReviewObject</dataInputRefs>
+                    <dataInputRefs>bookTripRequestObject</dataInputRefs>
+                    <dataInputRefs>execData</dataInputRefs>
+                </inputSet>
+                <outputSet id="ACT12335643291574_uniqueOutputSet">
+                    <dataOutputRefs>outcome</dataOutputRefs>
+                    <dataOutputRefs>bookTripRequestObject</dataOutputRefs>
+                    <dataOutputRefs>execData</dataOutputRefs>
+                </outputSet>
+            </ioSpecification>
+            <dataInputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>bookTripRequest</sourceRef>
+                <targetRef>bookTripRequestObject</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('bookTripRequest')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('bookTripRequestObject')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataInputAssociation>
+            <dataInputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>requestReview</sourceRef>
+                <targetRef>requestReviewObject</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('requestReview')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('requestReviewObject')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataInputAssociation>
+            <dataOutputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>bookTripRequestObject</sourceRef>
+                <targetRef>bookTripRequest</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataOutput('bookTripRequestObject')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('bookTripRequest')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataOutputAssociation>
+            <dataOutputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <sourceRef>outcome</sourceRef>
+                <targetRef>manualReviewOutcome</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataOutput('outcome')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('manualReviewOutcome')
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataOutputAssociation>
             <resourceRole name="Firma" id="lane3"/>
         </userTask>
         <userTask isForCompensation="false" name="Odbierz potwierdzenie wyjazdu" id="ACT12335747582381">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1147" y="97"/>
+                        <ns5:Position y="97" x="1147"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -327,7 +492,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="888" y="689"/>
+                        <ns5:Position y="689" x="888"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -347,7 +512,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="889" y="501"/>
+                        <ns5:Position y="501" x="889"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -367,8 +532,8 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1169" y="499"/>
-                        <ns5:Size width="300" height="193"/>
+                        <ns5:Position y="499" x="1169"/>
+                        <ns5:Size height="193" width="300"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapsed"/>
@@ -386,7 +551,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="152" y="81"/>
+                            <ns5:Position y="81" x="152"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -406,7 +571,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="30" y="82"/>
+                            <ns5:Position y="82" x="30"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="true" name="catchAllErrors"/>
@@ -424,21 +589,21 @@
                 <dataOutput name="errorInfo" id="errorInfo">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="faultNamespace" id="faultNamespace">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="faultName" id="faultName">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
@@ -453,7 +618,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="278" y="81"/>
+                            <ns5:Position y="81" x="278"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -465,7 +630,7 @@
                 </extensionElements>
                 <terminateEventDefinition/>
             </endEvent>
-            <sequenceFlow sourceRef="EVT12336093667577" targetRef="ACT1233610160227" name="sf66" id="sf66">
+            <sequenceFlow targetRef="ACT1233610160227" sourceRef="EVT12336093667577" name="sf66" id="sf66">
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:SequenceFlowAttributes/>
@@ -477,7 +642,7 @@
                     </ns5:OracleExtensions>
                 </extensionElements>
             </sequenceFlow>
-            <sequenceFlow sourceRef="ACT1233610160227" targetRef="EVT12336093667641" name="sf67" id="sf67">
+            <sequenceFlow targetRef="EVT12336093667641" sourceRef="ACT1233610160227" name="sf67" id="sf67">
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:SequenceFlowAttributes/>
@@ -494,8 +659,8 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1171" y="699"/>
-                        <ns5:Size width="303" height="190"/>
+                        <ns5:Position y="699" x="1171"/>
+                        <ns5:Size height="190" width="303"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapsed"/>
@@ -513,7 +678,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="145" y="84"/>
+                            <ns5:Position y="84" x="145"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -533,7 +698,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="25" y="84"/>
+                            <ns5:Position y="84" x="25"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="true" name="catchAllErrors"/>
@@ -551,21 +716,21 @@
                 <dataOutput name="errorInfo" id="errorInfo">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="faultNamespace" id="faultNamespace">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
                 <dataOutput name="faultName" id="faultName">
                     <extensionElements>
                         <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
+                            <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                         </ns5:OracleExtensions>
                     </extensionElements>
                 </dataOutput>
@@ -580,7 +745,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes>
-                            <ns5:Position x="269" y="84"/>
+                            <ns5:Position y="84" x="269"/>
                         </ns5:GraphicsAttributes>
                         <ns5:FeatureSet>
                             <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -592,7 +757,7 @@
                 </extensionElements>
                 <terminateEventDefinition/>
             </endEvent>
-            <sequenceFlow sourceRef="EVT12336112516670" targetRef="ACT12336116037554" name="sf68" id="sf68">
+            <sequenceFlow targetRef="ACT12336116037554" sourceRef="EVT12336112516670" name="sf68" id="sf68">
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:SequenceFlowAttributes/>
@@ -604,7 +769,7 @@
                     </ns5:OracleExtensions>
                 </extensionElements>
             </sequenceFlow>
-            <sequenceFlow sourceRef="ACT12336116037554" targetRef="EVT12336112516687" name="sf69" id="sf69">
+            <sequenceFlow targetRef="EVT12336112516687" sourceRef="ACT12336116037554" name="sf69" id="sf69">
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:SequenceFlowAttributes/>
@@ -617,11 +782,58 @@
                 </extensionElements>
             </sequenceFlow>
         </subProcess>
+        <scriptTask isForCompensation="false" name="Zaakceptuj wniosek" id="ACT12338444706526">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position y="228" x="588"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:BooleanFeature value="false" name="outputValidation"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="" name="script"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                    <ns5:LogHandlers/>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <ioSpecification/>
+            <dataOutputAssociation>
+                <extensionElements>
+                    <ns5:OracleExtensions/>
+                </extensionElements>
+                <targetRef>requestReview</targetRef>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath">true()
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('requestReview')/ns:valid
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
+            </dataOutputAssociation>
+            <script></script>
+        </scriptTask>
         <startEvent isInterrupting="false" name="Start" id="EVT12241105805682">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="100" y="100"/>
+                        <ns5:Position y="100" x="100"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -638,7 +850,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1294" y="97"/>
+                        <ns5:Position y="97" x="1294"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="inputValidation"/>
@@ -651,11 +863,44 @@
             </extensionElements>
             <inputSet/>
         </endEvent>
+        <boundaryEvent attachedToRef="ACT12335643291574" cancelActivity="false" name="PrzekroczenieCzasuOczekiwania" id="EVT12338435407981">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position y="285" x="515"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="isDraft"/>
+                        <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
+                        <ns5:StringFeature value="Begin Level" name="level"/>
+                        <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <timerEventDefinition>
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:OptionalTimerEventFeatures>
+                            <ns5:useCalendar>false</ns5:useCalendar>
+                            <ns5:outOfCalendarPolicy>NO_RESCHEDULE</ns5:outOfCalendarPolicy>
+                            <ns5:rescheduleRestrictionsPolicy>EACH_ENTRY_AS_DIFFERENT_EVENT</ns5:rescheduleRestrictionsPolicy>
+                        </ns5:OptionalTimerEventFeatures>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+                <timeCycle xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath">'P1D'
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:Expression mode="xpath"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                </timeCycle>
+            </timerEventDefinition>
+        </boundaryEvent>
         <exclusiveGateway gatewayDirection="Unspecified" name="czyZaakceptowanoWniosek" id="GTW12335656509088">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="655" y="308"/>
+                        <ns5:Position y="310" x="653"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
@@ -669,7 +914,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="788" y="309"/>
+                        <ns5:Position y="309" x="788"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
@@ -684,7 +929,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1001" y="301"/>
+                        <ns5:Position y="301" x="1001"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
@@ -699,7 +944,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="417" y="310"/>
+                        <ns5:Position y="310" x="417"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:StringFeature value="PROCESS_DEFAULT" name="generatesEvents"/>
@@ -709,11 +954,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </exclusiveGateway>
-        <sequenceFlow sourceRef="EVT12241105805682" targetRef="ACT12241105805790" name="sf43" id="sf43">
+        <sequenceFlow targetRef="ACT12241105805790" sourceRef="EVT12241105805682" name="sf43" id="sf43">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="160" y="100"/>
+                        <ns5:Positions y="100" x="160"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -723,11 +968,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT12241105805790" targetRef="ACT1224117199161" name="sf44" id="sf44">
+        <sequenceFlow targetRef="ACT1224117199161" sourceRef="ACT12241105805790" name="sf44" id="sf44">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="235" y="204"/>
+                        <ns5:Positions y="204" x="235"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -737,7 +982,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT1224117199161" targetRef="GTW12337286550143" name="sf48" id="sf48">
+        <sequenceFlow targetRef="GTW12337286550143" sourceRef="ACT1224117199161" name="sf48" id="sf48">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -749,7 +994,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT12335643291574" targetRef="GTW12335656509088" name="sf49" id="sf49">
+        <sequenceFlow targetRef="GTW12335656509088" sourceRef="ACT12335643291574" name="sf49" id="sf49">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -761,7 +1006,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12335656509088" targetRef="GTW12335681935963" name="sf50" id="sf50">
+        <sequenceFlow targetRef="GTW12335681935963" sourceRef="GTW12335656509088" name="sf50" id="sf50">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -774,11 +1019,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12335656509088" targetRef="ACT12241105805790" name="sf53" id="sf53">
+        <sequenceFlow targetRef="ACT12241105805790" sourceRef="GTW12335656509088" name="sf53" id="sf53">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="427" y="38"/>
+                        <ns5:Positions y="38" x="427"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -789,13 +1034,19 @@
                     </ns5:FeatureSet>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <conditionExpression xsi:type="tFormalExpression"/>
+            <conditionExpression xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">(bpmn:getDataObject('manualReviewOutcome') = 'REJECTED')
+                <extensionElements>
+                    <ns5:OracleExtensions>
+                        <ns5:Expression mode="simple"/>
+                    </ns5:OracleExtensions>
+                </extensionElements>
+            </conditionExpression>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12335681935963" targetRef="ACT12335834825688" name="sf54" id="sf54">
+        <sequenceFlow targetRef="ACT12335834825688" sourceRef="GTW12335681935963" name="sf54" id="sf54">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="788" y="320"/>
+                        <ns5:Positions y="320" x="788"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -805,11 +1056,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12335683747885" targetRef="ACT12335747582381" name="sf55" id="sf55">
+        <sequenceFlow targetRef="ACT12335747582381" sourceRef="GTW12335683747885" name="sf55" id="sf55">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="1072" y="100"/>
+                        <ns5:Positions y="100" x="1072"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -819,11 +1070,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12335681935963" targetRef="ACT12335831309452" name="sf59" id="sf59">
+        <sequenceFlow targetRef="ACT12335831309452" sourceRef="GTW12335681935963" name="sf59" id="sf59">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="830" y="312"/>
+                        <ns5:Positions y="312" x="830"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -833,7 +1084,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT12335747582381" targetRef="EVT12241105805726" name="sf61" id="sf61">
+        <sequenceFlow targetRef="EVT12241105805726" sourceRef="ACT12335747582381" name="sf61" id="sf61">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -845,11 +1096,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT12335831309452" targetRef="GTW12335683747885" name="sf62" id="sf62">
+        <sequenceFlow targetRef="GTW12335683747885" sourceRef="ACT12335831309452" name="sf62" id="sf62">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="937" y="302"/>
+                        <ns5:Positions y="302" x="937"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -859,11 +1110,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT12335834825688" targetRef="GTW12335683747885" name="sf63" id="sf63">
+        <sequenceFlow targetRef="GTW12335683747885" sourceRef="ACT12335834825688" name="sf63" id="sf63">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="1002" y="471"/>
+                        <ns5:Positions y="471" x="1002"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -873,7 +1124,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12337286550143" targetRef="ACT12335643291574" name="sf121" id="sf121">
+        <sequenceFlow targetRef="ACT12335643291574" sourceRef="GTW12337286550143" name="sf121" id="sf121">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
@@ -885,11 +1136,11 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="GTW12337286550143" targetRef="ACT12241105805790" name="sf123" id="sf123">
+        <sequenceFlow targetRef="ACT12241105805790" sourceRef="GTW12337286550143" name="sf123" id="sf123">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes>
-                        <ns5:Positions x="409" y="109"/>
+                        <ns5:Positions y="109" x="409"/>
                     </ns5:SequenceFlowAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="collapseMessage"/>
@@ -908,11 +1159,39 @@
                 </extensionElements>
             </conditionExpression>
         </sequenceFlow>
+        <sequenceFlow targetRef="ACT12338444706526" sourceRef="EVT12338435407981" name="sf68" id="sf68">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions y="230" x="538"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="538,230" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow targetRef="GTW12335656509088" sourceRef="ACT12338444706526" name="sf70" id="sf70">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes>
+                        <ns5:Positions y="274" x="645"/>
+                    </ns5:SequenceFlowAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="645,274" name="curve"/>
+                        <ns5:StringFeature value="ORTHOGONAL" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
         <dataObject name="bookTripRequest" id="bookTripRequest">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:DataObjectType initialize="true">
-                        <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" element="BookTripRequestObject" isArray="false"/>
+                        <ns5:TypeRef isArray="false" element="BookTripRequestObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"/>
                     </ns5:DataObjectType>
                 </ns5:OracleExtensions>
             </extensionElements>
@@ -921,7 +1200,16 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:DataObjectType initialize="true">
-                        <ns5:TypeRef namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject" element="RequestReviewObject" isArray="false"/>
+                        <ns5:TypeRef isArray="false" element="RequestReviewObject" namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/RequestReviewObject"/>
+                    </ns5:DataObjectType>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </dataObject>
+        <dataObject name="manualReviewOutcome" id="manualReviewOutcome">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:DataObjectType initialize="true">
+                        <ns5:TypeRef isArray="false" type="string" namespace="http://www.w3.org/2001/XMLSchema"/>
                     </ns5:DataObjectType>
                 </ns5:OracleExtensions>
             </extensionElements>

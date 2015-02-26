@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Actions xmlns="http://xmlns.oracle.com/bpm/analytics/measurement">
     <compositeDN>TripBPMNProject</compositeDN>
-    <action name="BAMCommand" enabled="false">
+    <action enabled="false" name="BAMCommand">
         <interfaceName>oracle.bpm.analytics.bam.action.BAMActionMDB</interfaceName>
         <properties>
             <property name="InBatch">false</property>
@@ -11,7 +11,7 @@
         </properties>
         <measurementElementName>TripBPMNProject</measurementElementName>
     </action>
-    <action name="CubeCommand" enabled="true">
+    <action enabled="true" name="CubeCommand">
         <interfaceName>oracle.bpm.analytics.cube.action.CubeActionMDB</interfaceName>
         <properties/>
         <measurementElementName>TripBPMNProject</measurementElementName>

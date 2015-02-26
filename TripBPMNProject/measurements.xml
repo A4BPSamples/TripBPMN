@@ -2,7 +2,7 @@
 <measurements xmlns="http://xmlns.oracle.com/bpm/analytics/measurement">
     <compositeDN>TripBPMNProject</compositeDN>
     <measurementElements>
-        <measurementElement name="TripBPMNProject" type="COMPOSITE" enabled="true">
+        <measurementElement enabled="true" type="COMPOSITE" name="TripBPMNProject">
             <elementSelection>INTERACTIVE</elementSelection>
             <elementStates>
                 <elementState>ALL</elementState>

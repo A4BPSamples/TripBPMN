@@ -4,12 +4,17 @@
              Package="booktrip_ui" ClientType="Generic">
   <pageMap>
     <page path="/taskDetails1.jspx" usageId="booktrip_ui_taskDetails1PageDef"/>
+    <page path="/taskDetails2.jspx" usageId="booktrip_ui_taskDetails2PageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="booktrip_ui_taskDetails1PageDef"
           path="booktrip_ui.pageDefs.taskDetails1PageDef"/>
+    <page id="booktrip_ui_taskDetails2PageDef"
+          path="booktrip_ui.pageDefs.taskDetails2PageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
+    <dc id="BookTrip_UI_AcceptRequest"
+        path="booktrip_ui.BookTrip_UI_AcceptRequest"/>
     <dc id="BookTrip_UI_WypelnijWniosek"
         path="booktrip_ui.BookTrip_UI_WypelnijWniosek"/>
   </dataControlUsages>
