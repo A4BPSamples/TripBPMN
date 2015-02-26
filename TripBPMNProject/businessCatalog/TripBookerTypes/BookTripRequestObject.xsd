@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?bpmo version="11.1.1.7.0.0.8" build="0.8" fullName="TripBookerTypes.BookTripRequestObject" modifiers="0"?>
+<?bpmo version="11.1.1.7.0.0.8" build="0.8" fullName="TripBookerTypes.BookTripRequestObject" modifiers="268435456"?>
 <!--########################################################################################-->
 <!--####                                                                                ####-->
 <!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
@@ -7,6 +7,15 @@
 <!--####                                                                                ####-->
 <!--########################################################################################-->
 <xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
-    <xs:complexType name="BookTripRequestObjectType"/>
+    <xs:complexType name="BookTripRequestObjectType">
+        <xs:sequence>
+            <xs:element name="firstName" nillable="true" type="xs:string"/>
+            <xs:element name="lastName" nillable="true" type="xs:string"/>
+            <xs:element name="pesel" nillable="true" type="xs:string"/>
+            <xs:element name="destinationPlace" nillable="true" type="xs:string"/>
+            <xs:element name="startDate" nillable="true" type="xs:dateTime"/>
+            <xs:element name="endDate" nillable="true" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:element name="BookTripRequestObject" type="BookTripRequestObjectType"/>
 </xs:schema>

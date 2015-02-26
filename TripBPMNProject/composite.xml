@@ -16,8 +16,21 @@
   <property name="productVersion" type="xs:string" many="false">11.1.1.7.0</property>
   <component name="BookTripProcess">
     <implementation.bpmn src="processes/BookTripProcess.bpmn"/>
+    <property name="bpel.config.oneWayDeliveryPolicy" type="xs:string"
+              many="false">sync</property>
+    <property name="bpel.config.transaction" type="xs:string" many="false">required</property>
   </component>
   <component name="WypelnijWniosekOWyjazd">
     <implementation.workflow src="WypelnijWniosekOWyjazd.task"/>
   </component>
+  <component name="Humantask1">
+    <implementation.workflow src="Humantask1.task"/>
+  </component>
+  <component name="WypelnijWniosek">
+    <implementation.workflow src="WypelnijWniosek.task"/>
+  </component>
+  <wire>
+    <source.uri>BookTripProcess/HumanTasks.WypelnijWniosek.reference</source.uri>
+    <target.uri>WypelnijWniosek/TaskService</target.uri>
+  </wire>
 </composite>
