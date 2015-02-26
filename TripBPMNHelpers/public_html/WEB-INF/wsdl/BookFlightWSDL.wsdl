@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions targetNamespace="urn:BookFlightWSDL"
+             xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:tns="urn:BookFlightWSDL"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+             xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+             xmlns:myTypes="http://www.example.org">
+  <types>
+    <xsd:schema targetNamespace="http://www.example.org"
+                elementFormDefault="qualified">
+      <xsd:include schemaLocation="../xsd/bookFlight.xsd"/>
+    </xsd:schema>
+  </types>
+  <message name="bookFlightInputMessage">
+    <part name="bookFlightInputMessagePart" element="myTypes:bookFlightInput"/>
+  </message>
+  <message name="bookFlightOutputMessage">
+    <part name="bookFlightOutputMessagePart"
+          element="myTypes:bookFlightOutput"/>
+  </message>
+  <message name="bookFlightErrorMessage">
+    <part name="bookFlightErrorMessagePart" element="myTypes:bookFlightError"/>
+  </message>
+  <portType name="bookFlightInputPort">
+    <operation name="bookFlightOperation">
+      <input message="tns:bookFlightInputMessage"/>
+      <output message="tns:bookFlightOutputMessage"/>
+      <fault message="tns:bookFlightErrorMessage" name="bookFlightError"/>
+    </operation>
+    <operation name="bookFlightCompensateOperation">
+      <input message="tns:bookFlightOutputMessage"/>
+    </operation>
+  </portType>
+  <binding name="bookFlightInputPortSOAP12Binding"
+           type="tns:bookFlightInputPort">
+    <soap12:binding style="document"
+                    transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="bookFlightOperation">
+      <soap12:operation style="document"
+                        soapAction="urn:BookFlightWSDL/bookFlightOperation"/>
+      <input>
+        <soap12:body use="literal" parts="bookFlightInputMessagePart"/>
+      </input>
+      <output>
+        <soap12:body use="literal" parts="bookFlightOutputMessagePart"/>
+      </output>
+      <fault name="bookFlightError">
+        <soap12:fault name="bookFlightError" use="literal"/>
+      </fault>
+    </operation>
+    <operation name="bookFlightCompensateOperation">
+      <soap12:operation style="document"
+                        soapAction="urn:BookFlightWSDL/bookFlightCompensateOperation"/>
+      <input>
+        <soap12:body use="literal" parts="bookFlightOutputMessagePart"/>
+      </input>
+    </operation>
+  </binding>
+  <service name="bookFlightService">
+    <port name="bookFlightPort" binding="tns:bookFlightInputPortSOAP12Binding">
+      <soap:address location="http://www.example.org"/>
+    </port>
+  </service>
+</definitions>

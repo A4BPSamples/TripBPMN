@@ -71,7 +71,7 @@
             </topicDocumentation>
             <topicDocumentation name="EVT12336093667577">
                 <labels>
-                    <label locale="en">Start1</label>
+                    <label locale="en">Blad rezerwacji hotelu</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>
@@ -102,7 +102,7 @@
             </topicDocumentation>
             <topicDocumentation name="EVT12336112516670">
                 <labels>
-                    <label locale="en">Start2</label>
+                    <label locale="en">Blad rezerwacji lotu</label>
                 </labels>
                 <descriptions>
                     <description locale="en"></description>

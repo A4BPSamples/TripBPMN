@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="../../public_html/WEB-INF/wsdl/BookFlightWSDL.wsdl"/>
+      <url path="../org/example/package-info.java"/>
+      <url path="../org/example/HotelInfoType.java"/>
+      <url path="../org/example/ObjectFactory.java"/>
+      <url path="../org/example/TripDataType.java"/>
+      <url path="../org/example/ErrorType.java"/>
+      <url path="../org/example/FlightInfoType.java"/>
+      <url path="../org/example/BookFlightInput.java"/>
+      <url path="../org/example/PersonDataType.java"/>
+      <url path="BookFlightErrorMessage.java"/>
+      <url path="../org/example/BookFlightOutput.java"/>
+      <url path="BookFlightInputPortImpl.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="BD_">
+         <hash>
+            <value n="BD_DEFAULT_DOCUMENT_WRAPPED" v="false"/>
+            <value n="BD_SOAP_VERSION" v="1.2"/>
+            <value n="BOUND_PORT_TYPE" v="{USE_OWNER_TNS}bookFlightInputPort"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{urn:BookFlightWSDL}bookFlightInputPortSOAP12Binding"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_RESPONSE_PART" v="bookFlightOutputMessagePart"/>
+                  <value n="BD_SOAP_ACTION" v="urn:BookFlightWSDL/bookFlightOperation"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="bookFlightOutput"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="http://www.example.org"/>
+                  <value n="BOUND_OPERATION" v="org.example.BookFlightOutput.bookFlightOperation.org.example.BookFlightInput"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BD_DOCUMENT_WRAPPED" v="false"/>
+                  <value n="BD_SOAP_ACTION" v="urn:BookFlightWSDL/bookFlightCompensateOperation"/>
+                  <value n="BD_WSDL_RETURN_NAME" v="bookFlightCompensateOperationResponse"/>
+                  <value n="BD_WSDL_RETURN_TNS" v="USE_OWNER_TNS"/>
+                  <value n="BOUND_OPERATION" v="void.bookFlightCompensateOperation.org.example.BookFlightOutput"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <list n="BINDING_FILES"/>
+      <value n="GENERATION_OPTION" v="ANNOTATIONS_WSDL"/>
+      <value n="GUID" v="c7c1442b-014b-1000-8007-7f0000013a8e"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="bookFlightPort"/>
+            <value n="PORT_BINDING_NAME" v="{urn:BookFlightWSDL}bookFlightInputPortSOAP12Binding"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="org.example.BookFlightOutput.bookFlightOperation.org.example.BookFlightInput"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.bookFlightCompensateOperation.org.example.BookFlightOutput"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <url n="URL" protocol="http" host="www.example.org" path=""/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_UNWRAP_PARAMETERS" v="false"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE"/>
+            <value n="DEFAULT_NAME" v="false"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{USE_OWNER_TNS}bookFlightInputPort"/>
+            <list n="OP_">
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <list n="OP_JAVA_EXCEPTIONS">
+                     <string v="bookflightwsdl.BookFlightErrorMessage"/>
+                  </list>
+                  <value n="OP_JAVA_NAME" v="bookFlightOperation"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="bookFlightInputMessagePart"/>
+                        <value n="PA_MODE" v="0"/>
+                        <value n="PA_WSDL_NAME" v="bookFlightInput"/>
+                        <value n="PA_WSDL_PART_NAME" v="bookFlightInputMessagePart"/>
+                        <value n="TARGET_NAMESPACE" v="http://www.example.org"/>
+                        <value n="TYPE" v="org.example.BookFlightInput"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="org.example.BookFlightOutput"/>
+                  <value n="OP_NAME" v="bookFlightOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaOperation"/>
+                  <value n="OP_JAVA_NAME" v="bookFlightCompensateOperation"/>
+                  <list n="OP_JAVA_PARAMETERS">
+                     <hash>
+                        <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaParameter"/>
+                        <value n="NAME" v="bookFlightOutputMessagePart"/>
+                        <value n="PA_WSDL_NAME" v="bookFlightOutput"/>
+                        <value n="PA_WSDL_PART_NAME" v="bookFlightOutputMessagePart"/>
+                        <value n="TARGET_NAMESPACE" v="http://www.example.org"/>
+                        <value n="TYPE" v="org.example.BookFlightOutput"/>
+                     </hash>
+                  </list>
+                  <value n="OP_JAVA_RETURN_TYPE" v="void"/>
+                  <value n="OP_NAME" v="bookFlightCompensateOperation"/>
+                  <value n="OP_ONE_WAY_OPERATION" v="true"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="bookflightwsdl.BookFlightInputPortImpl"/>
+         </hash>
+      </list>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <url n="TARGET_PROJECT" path="../../TripBPMNHelpers.jpr"/>
+      <value n="TOPDOWN_GENERATION_OPTION" v="JAVA"/>
+      <value n="WS_CREATE_ONEWAY_OPERATIONS" v="true"/>
+      <list n="WS_DEPENDENT_VALUE_TYPES"/>
+      <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+      <url n="WS_REFERENCE_WSDL" path="../../public_html/WEB-INF/wsdl/BookFlightWSDL.wsdl"/>
+      <value n="WS_TARGET_NAMESPACE" v="urn:BookFlightWSDL"/>
+      <value n="WS_URI" v="bookFlightService"/>
+      <url n="WS_WSDL_FILE" path="../../public_html/WEB-INF/wsdl/BookFlightWSDL.wsdl"/>
+      <value n="WS_WSDL_LOC_ON_SEI" v="false"/>
+      <value n="WS_WSDL_LOC_VALUE" v="/WEB-INF/wsdl/BookFlightWSDL.wsdl"/>
+      <value n="WS_WSDL_LOCATION" v="/oracle/jdev_user_home/mywork/TripBPMN_OBE/TripBPMNHelpers/public_html/WEB-INF/wsdl/"/>
+   </hash>
+</jdevws:WebService>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org"
+            elementFormDefault="qualified">
+  <xsd:complexType name="personDataType">
+        <xsd:sequence>
+            <xsd:element name="firstName" type="xsd:string"/>
+            <xsd:element name="lastName" type="xsd:string"/>
+            <xsd:element name="PESEL">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="\d{11}"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="tripDataType">
+        <xsd:sequence>
+            <xsd:element name="destinationName" type="xsd:string"/>
+            <xsd:element name="startDate" type="xsd:date"/>
+            <xsd:element name="endDate" type="xsd:date"/>
+            <xsd:element name="clientData" type="personDataType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="hotelInfoType">
+        <xsd:sequence>
+            <xsd:element name="reservationNumber" type="xsd:string"/>
+            <xsd:element name="hotelName" type="xsd:string"/>
+            <xsd:element name="roomNumber" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="flightInfoType">
+        <xsd:sequence>
+            <xsd:element name="reservationNumber" type="xsd:string"/>
+            <xsd:element name="flightNumber" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="errorType">
+        <xsd:sequence>
+            <xsd:element name="code" type="xsd:int"/>
+            <xsd:element name="message" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

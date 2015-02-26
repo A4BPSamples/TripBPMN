@@ -18,4 +18,12 @@
     <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
                     callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
   </reference>
+  <reference name="Services.Externals.BookFlightService.reference"
+             ui:wsdlLocation="http://soabpm-vm.site:7001/TripBPMN_OBE-TripBPMNHelpers-context-root/bookFlightPort?wsdl">
+    <interface.wsdl interface="urn:BookFlightWSDL#wsdl.interface(bookFlightInputPort)"/>
+  </reference>
+  <reference name="Services.Externals.BookHotelService.reference"
+             ui:wsdlLocation="http://soabpm-vm.site:7001/TripBooker-BookHotel-context-root/bookHotelPort?wsdl">
+    <interface.wsdl interface="urn:WSDLBookHotel#wsdl.interface(bookHotelInputPort)"/>
+  </reference>
 </componentType>

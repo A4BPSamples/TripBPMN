@@ -70,4 +70,12 @@
     <source.uri>BookTripProcess/HumanTasks.AcceptRequest.reference</source.uri>
     <target.uri>AcceptRequest/TaskService</target.uri>
   </wire>
+  <wire>
+    <source.uri>BookTripProcess/Services.Externals.BookFlightService.reference</source.uri>
+    <target.uri>BookFlightService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>BookTripProcess/Services.Externals.BookHotelService.reference</source.uri>
+    <target.uri>BookHotelService</target.uri>
+  </wire>
 </composite>
