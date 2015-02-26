@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="BookTripProcess">
+        <topicDocumentations>
+            <topicDocumentation name="BookTripProcess">
+                <descriptions>
+                    <description locale="en">BookTripProcess</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12241105805790">
+                <labels>
+                    <label locale="en">Wypelnienie wniosku o wyjazd</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1224117199161">
+                <labels>
+                    <label locale="en">Weryfikacja wniosku</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12335643291574">
+                <labels>
+                    <label locale="en">Akceptacja wniosku</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12335747582381">
+                <labels>
+                    <label locale="en">Odbierz potwierdzenie wyjazdu</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12335834825688">
+                <labels>
+                    <label locale="en">Zarezerwuj hotel</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12335831309452">
+                <labels>
+                    <label locale="en">Zarezerwuj lot</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12336093445443">
+                <labels>
+                    <label locale="en">Subprocess</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="ACT1233610160227">
+                <labels>
+                    <label locale="en">Wycofaj rezerwacje lotu</label>
+                </labels>
+                <descriptions>
+                    <description locale="en">Wycofaj rezerwacje lotu</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12336093667577">
+                <labels>
+                    <label locale="en">Start1</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12336093667641">
+                <labels>
+                    <label locale="en">End1</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf66"/>
+            <topicDocumentation name="sf67"/>
+            <topicDocumentation name="ACT12336112021762">
+                <labels>
+                    <label locale="en">Subprocess1</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="ACT12336116037554">
+                <labels>
+                    <label locale="en">Wycofaj rezerwacje hotelu</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12336112516670">
+                <labels>
+                    <label locale="en">Start2</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12336112516687">
+                <labels>
+                    <label locale="en">End2</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf68"/>
+            <topicDocumentation name="sf69"/>
+            <topicDocumentation name="EVT12241105805682">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT12241105805726">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="GTW12335656509088">
+                <labels>
+                    <label locale="en">czyZaakceptowanoWniosek</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW12335681935963">
+                <labels>
+                    <label locale="en">RezerwacjaGateway</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="GTW12335683747885">
+                <labels>
+                    <label locale="en">ParallelGateway</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="sf43"/>
+            <topicDocumentation name="sf44"/>
+            <topicDocumentation name="sf48"/>
+            <topicDocumentation name="sf49"/>
+            <topicDocumentation name="sf50">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf53">
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf54"/>
+            <topicDocumentation name="sf55"/>
+            <topicDocumentation name="sf59"/>
+            <topicDocumentation name="sf61"/>
+            <topicDocumentation name="sf62"/>
+            <topicDocumentation name="sf63"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>
