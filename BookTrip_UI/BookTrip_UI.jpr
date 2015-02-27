@@ -120,6 +120,10 @@
                               <value n="type" v="1"/>
                            </hash>
                            <hash>
+                              <value n="pattern" v="WEB-INF/classes/jsp_servlet/**"/>
+                              <value n="type" v="1"/>
+                           </hash>
+                           <hash>
                               <value n="pattern" v="WEB-INF/temp/**"/>
                               <value n="type" v="1"/>
                            </hash>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<hwTaskFlows xmlns="http://xmlns.oracle.com/bpel/workflow/hwTaskFlowProperties">
+   <ApplicationName>worklist</ApplicationName>
+   <LookupType>LOCAL</LookupType>
+   <TaskFlowDeploy>false</TaskFlowDeploy>
+   <TaskFlowServer>
+      <hostName/>
+      <httpPort/>
+      <httpsPort/>
+   </TaskFlowServer>
+<hwTaskFlow><WorkflowName>WypelnijWniosek</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/TripBPMN_OBE/TripBPMNProject/WypelnijWniosek</TaskDefinitionNamespace><TaskFlowId>WypelnijWniosek_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/WypelnijWniosek_TaskFlow.xml</TaskFlowFileName></hwTaskFlow><hwTaskFlow><WorkflowName>AcceptRequest</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/TripBPMN_OBE/TripBPMNProject/AcceptRequest</TaskDefinitionNamespace><TaskFlowId>AcceptRequest_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/AcceptRequest_TaskFlow.xml</TaskFlowFileName></hwTaskFlow><hwTaskFlow><WorkflowName>SendTripConfirmation</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/TripBPMN_OBE/TripBPMNProject/SendTripConfirmation</TaskDefinitionNamespace><TaskFlowId>SendTripConfirmation_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/SendTripConfirmation_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>

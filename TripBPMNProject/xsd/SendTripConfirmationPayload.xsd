@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns0="http://www.example.org">
+   <import namespace="http://www.example.org" schemaLocation="http://soabpm-vm.site:7001/TripBPMN_OBE-TripBPMNHelpers-context-root/bookFlightPort?xsd=1"/>
+   <import namespace="http://www.example.org" schemaLocation="http://soabpm-vm.site:7001/TripBooker-BookHotel-context-root/bookHotelPort?xsd=1"/>
+   <complexType name="SendTripConfirmationPayloadType">
+      <sequence>
+         <element ref="ns0:bookFlightOutput"/>
+         <element ref="ns0:bookHotelOutput"/>
+      </sequence>
+   </complexType>
+</schema>

@@ -38,6 +38,9 @@
   <component name="AcceptRequest">
     <implementation.workflow src="AcceptRequest.task"/>
   </component>
+  <component name="SendTripConfirmation">
+    <implementation.workflow src="SendTripConfirmation.task"/>
+  </component>
   <reference name="BookFlightService"
              ui:wsdlLocation="http://soabpm-vm.site:7001/TripBPMN_OBE-TripBPMNHelpers-context-root/bookFlightPort?wsdl">
     <interface.wsdl interface="urn:BookFlightWSDL#wsdl.interface(bookFlightInputPort)"/>
@@ -77,5 +80,9 @@
   <wire>
     <source.uri>BookTripProcess/Services.Externals.BookHotelService.reference</source.uri>
     <target.uri>BookHotelService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>BookTripProcess/HumanTasks.SendTripConfirmation.reference</source.uri>
+    <target.uri>SendTripConfirmation/TaskService</target.uri>
   </wire>
 </composite>

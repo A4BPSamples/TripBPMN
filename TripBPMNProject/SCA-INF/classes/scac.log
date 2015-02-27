@@ -1,0 +1,32 @@
+Feb 26, 2015 11:19:03 PM oracle.mds
+NOTIFICATION: PManager instance is created without multitenancy support as JVM flag "oracle.multitenant.enabled" is not set to enable multitenancy support.
+Feb 26, 2015 11:19:04 PM oracle.security.jps.internal.config.xml.XmlConfigurationFactory initDefaultConfiguration
+SEVERE: java.io.FileNotFoundException: ./config/jps-config.xml (No such file or directory)
+Feb 26, 2015 11:19:04 PM oracle.mds
+NOTIFICATION: Auditing is disabled for component MDS.
+Feb 26, 2015 11:19:05 PM oracle.fabric.common.wsdl.SchemaManager isIncrementalBuildSupported
+INFO: XMLSchema incremental build enabled.
+Feb 26, 2015 11:19:22 PM oracle.bpel.services.common.ServicesLogger __logException
+SEVERE: <.> Duplicated definition for: 'personDataType'
+oracle.xml.parser.schema.XSDException: Duplicated definition for: 'personDataType'
+	at oracle.xml.parser.schema.XSDBuilder.buildSchema(XSDBuilder.java:795)
+	at oracle.xml.parser.schema.XSDBuilder.build(XSDBuilder.java:443)
+	at oracle.bpel.services.rules.rpi.RuleEngineUtil.matchSchemaLocation(RuleEngineUtil.java:362)
+	at oracle.bpel.services.rules.fabric.xml.RuleDictionarySchemaUsage.addToResultSet(RuleDictionarySchemaUsage.java:317)
+	at oracle.bpel.services.rules.fabric.xml.RuleDictionarySchemaUsage.addToResultSet(RuleDictionarySchemaUsage.java:246)
+	at oracle.bpel.services.rules.fabric.xml.RuleDictionarySchemaUsage.calculateSchemaUsages(RuleDictionarySchemaUsage.java:166)
+	at oracle.bpel.services.rules.fabric.xml.XmlSchemaCache.onInit(XmlSchemaCache.java:256)
+	at oracle.bpel.services.rules.fabric.xml.XmlSchemaCache.onInit(XmlSchemaCache.java:193)
+	at oracle.bpel.services.rules.fabric.ComponentModelValidator.addSchemaInformation(ComponentModelValidator.java:291)
+	at oracle.bpel.services.rules.fabric.ComponentModelValidator.validate(ComponentModelValidator.java:245)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at oracle.soa.scac.rules.DecisionComponentValidator.validate(DecisionComponentValidator.java:118)
+	at oracle.soa.scac.ValidateComposite.validateComponentTypeServicesReferences(ValidateComposite.java:1051)
+	at oracle.soa.scac.ValidateComposite.doValidation0(ValidateComposite.java:502)
+	at oracle.soa.scac.ValidateComposite.doValidation(ValidateComposite.java:481)
+	at oracle.soa.scac.ValidateComposite.run0(ValidateComposite.java:206)
+	at oracle.soa.scac.ValidateComposite.run(ValidateComposite.java:187)
+	at oracle.soa.scac.ValidateComposite.main(ValidateComposite.java:179)

@@ -9,7 +9,7 @@
 <definitions targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject.Interface" name="BookTripRequestObject" xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns="http://schemas.xmlsoap.org/wsdl/"  xmlns:tns="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject.Interface"  xmlns:oj="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
     <types>
         <xsd:schema>
-            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" schemaLocation="BookTripRequestObject.xsd"/>
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/TripBookerTypes/BookTripRequestObject" schemaLocation="../../xsd/BookTripRequestObject.xsd"/>
         </xsd:schema>
     </types>
     <portType name="BookTripRequestObjectPortType"/>

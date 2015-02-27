@@ -10,11 +10,10 @@
         </ns1:applicationRole>
         <ns1:applicationRole id="TripBPMNProject.Klient" isProcessRole="true">
             <ns5:name>TripBPMNProject.Klient</ns5:name>
+            <ns1:member type="USER">
+                <ns1:name>jcooper</ns1:name>
+            </ns1:member>
             <ns1:processRole id="Klient" name="Klient"/>
-        </ns1:applicationRole>
-        <ns1:applicationRole id="TripBPMNProject.BiuroPodrozy" isProcessRole="false">
-            <ns5:name>TripBPMNProject.BiuroPodrozy</ns5:name>
-            <ns1:processRole id="BiuroPodrozy" name="BiuroPodrozy"/>
         </ns1:applicationRole>
         <ns1:applicationRole id="TripBPMNProject.Hotel" isProcessRole="true">
             <ns5:name>TripBPMNProject.Hotel</ns5:name>
@@ -26,6 +25,9 @@
         </ns1:applicationRole>
         <ns1:applicationRole id="TripBPMNProject.Firma" isProcessRole="true">
             <ns5:name>TripBPMNProject.Firma</ns5:name>
+            <ns1:member type="USER">
+                <ns1:name>jcooper</ns1:name>
+            </ns1:member>
             <ns1:processRole id="Firma" name="Firma"/>
         </ns1:applicationRole>
     </ns1:applicationRoles>

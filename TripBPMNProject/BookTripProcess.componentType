@@ -26,4 +26,9 @@
              ui:wsdlLocation="http://soabpm-vm.site:7001/TripBooker-BookHotel-context-root/bookHotelPort?wsdl">
     <interface.wsdl interface="urn:WSDLBookHotel#wsdl.interface(bookHotelInputPort)"/>
   </reference>
+  <reference name="HumanTasks.SendTripConfirmation.reference"
+             ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+    <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                    callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+  </reference>
 </componentType>
